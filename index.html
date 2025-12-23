@@ -1,161 +1,65 @@
-<html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vijay Kardak | DevOps Engineer</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, Helvetica, sans-serif;
-        }
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-        body {
-            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-            color: #ffffff;
-            min-height: 100vh;
-        }
-
-        /* Navbar */
-        nav {
-            width: 100%;
-            padding: 15px 40px;
-            background: rgba(0, 0, 0, 0.4);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        nav h2 {
-            color: #00e5ff;
-            font-size: 22px;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 25px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: #ffffff;
-            font-size: 15px;
-            transition: color 0.3s;
-        }
-
-        nav ul li a:hover {
-            color: #00e5ff;
-        }
-
-        /* Main Section */
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 60px 40px;
-            display: flex;
-            gap: 40px;
-            align-items: center;
-        }
-
-        .profile-img img {
-            width: 260px;
-            height: 260px;
-            border-radius: 50%;
-            border: 4px solid #00e5ff;
-            object-fit: cover;
-        }
-
-        .content h1 {
-            font-size: 42px;
-            margin-bottom: 10px;
-        }
-
-        .content h2 {
-            font-size: 22px;
-            color: #00e5ff;
-            margin-bottom: 20px;
-        }
-
-        .content p {
-            font-size: 16px;
-            line-height: 1.7;
-            color: #dcdcdc;
-            margin-bottom: 20px;
-        }
-
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        .skill {
-            padding: 8px 14px;
-            border: 1px solid #00e5ff;
-            border-radius: 20px;
-            font-size: 14px;
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            nav {
-                flex-direction: column;
-                gap: 10px;
-            }
-        }
-    </style>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Navbar -->
-    <nav>
-        <h2>DevOps Portfolio</h2>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+<!-- Navbar -->
+<nav class="navbar">
+    <h2 class="logo">DevOps Portfolio</h2>
+    <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
 
-    <!-- Main Content -->
-    <div class="container">
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-container">
+
         <div class="profile-img">
-		<img src="Profile.jpg" alt="Vijay Kardak" width="220">
+            <img src="Profile.jpg" alt="Vijay Kardak">
         </div>
 
-        <div class="content">
+        <div class="hero-content">
             <h1>Vijay Kardak</h1>
             <h2>DevOps Engineer</h2>
 
             <p>
-                I am a dedicated DevOps Engineer with a strong interest in automation,
-                cloud infrastructure, CI/CD pipelines, and system reliability.
-                I enjoy building scalable, secure, and efficient DevOps solutions.
+                I am a DevOps Engineer passionate about automation, cloud infrastructure,
+                CI/CD pipelines, containerization, and system reliability.
             </p>
 
+            <!-- Skills -->
             <div class="skills">
-                <div class="skill">Linux</div>
-                <div class="skill">Git & GitHub</div>
-                <div class="skill">Docker</div>
-                <div class="skill">Kubernetes</div>
-                <div class="skill">CI/CD</div>
-                <div class="skill">AWS</div>
-                <div class="skill">Shell Scripting</div>
-                <div class="skill">Monitoring</div>
+                <span><i class="fab fa-linux"></i> Linux</span>
+                <span><i class="fab fa-git-alt"></i> Git & GitHub</span>
+                <span><i class="fab fa-docker"></i> Docker</span>
+                <span><i class="fas fa-network-wired"></i> Kubernetes</span>
+                <span><i class="fab fa-aws"></i> AWS</span>
+                <span><i class="fas fa-sync-alt"></i> CI/CD</span>
+                <span><i class="fas fa-terminal"></i> Shell Scripting</span>
+                <span><i class="fas fa-chart-line"></i> Monitoring</span>
             </div>
         </div>
+
     </div>
-    <!-- Call to Action -->
-    <div class="cta">
-	      <a href="contact.html" class="connect-btn">Let's Get Connected</a>
-    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+    <a href="contact.html" class="connect-btn">🚀 Let’s Get Connected</a>
+</section>
+
 </body>
 </html>
 
